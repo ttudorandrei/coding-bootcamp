@@ -8,7 +8,7 @@ h2 {
 }
 
 ul {
-  text-align: right;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -22,23 +22,34 @@ li {
 /* Boxes */
 img {
   /* TODO: Add your code here */
-  margin: 0 auto;
+  margin: 0  auto;
 }
 
 #item-1 {
   background-color: #e0115f;
+  display: inline;
 }
 
 #item-2 {
   background-color: #0000ff;
+  display: inline;
 }
 
 #item-3 {
   background-color: #999900;
+  display: inline;
 }
 
+#image-1 {
+  display: block;
+}
+
+#image-2 {
+  display: block;
+
+}
 /* Box 3 */
 #image-3 {
   /* TODO: Add your code here */
-  display: none;
+  display: block;
 }
