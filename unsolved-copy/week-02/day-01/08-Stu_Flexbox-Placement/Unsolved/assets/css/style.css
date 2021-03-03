@@ -20,6 +20,7 @@ header {
 
 nav {
   display: flex;
+  justify-content: flex-end;
   background-color: #d8a47f;
 }
 
@@ -44,12 +45,30 @@ footer {
   margin: 1% auto;
 }
 
-.product button {
-  font-size: 150%;
+.btn {
+  font-size: 16px;
+
+}
+
+.slider-button {
+  border-radius: 100%;
+  border: none;
+  margin: 0 10px;
+  background-color: #4f5050;  
+  color: #fff;
+}
+
+.buy-now-btn {
+  background-color: cornflowerblue;
+  color: aliceblue;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 .product-slideshow {
   display: flex;
+  align-items: center;
 }
 
 .product-image {
