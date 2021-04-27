@@ -61,22 +61,22 @@ var netflixQueue = {
     "Mr. Nobody",
     "The Matrix",
     "Eternal Sunshine of the Spotless Mind",
-    "Fight Club"
+    "Fight Club",
   ],
-  watchMovie: () => {
+  watchMovie: function () {
     this.queue.pop();
   },
-  addMovie: (movie) => {
+  addMovie: function (movie) {
     this.queue.unshift(movie);
   },
-  printQueue: () => {
+  printQueue: function () {
     var list = "";
     for (var i = this.queue.length - 1; i >= 0; i--) {
       var currentMovie = this.queue[i];
-      list += (this.queue.length - i) + ". " + currentMovie + "\n";
+      list += this.queue.length - i + ". " + currentMovie + "\n";
     }
     console.log(list);
-  }
+  },
 };
 
 console.log("Printing movie queue!\n");
