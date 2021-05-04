@@ -10,10 +10,12 @@ Developer = function (name, tech) {
   this.name = name;
   this.tech = tech;
   this.introduction = () => {
-    console.log(name, tech);
+    console.log(
+      `My name is ${this.name}, and I like to play with ${this.tech}`
+    );
   };
 };
 
-const myNameAndTech = new Developer("Tudor", "nodejs");
+const myNameAndTech = new Developer("Tudor", "NodeJS");
 
 myNameAndTech.introduction();
