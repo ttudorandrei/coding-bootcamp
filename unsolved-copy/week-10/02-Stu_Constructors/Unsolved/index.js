@@ -6,7 +6,7 @@
 
 // TODO: Call the 'introduction()' method on the new object
 
-Developer = function (name, tech) {
+const Developer = function (name, tech) {
   this.name = name;
   this.tech = tech;
   this.introduction = () => {
