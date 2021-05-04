@@ -5,3 +5,15 @@
 // TODO: Create a new object using the 'Developer' constructor
 
 // TODO: Call the 'introduction()' method on the new object
+
+Developer = function (name, tech) {
+  this.name = name;
+  this.tech = tech;
+  this.introduction = () => {
+    console.log(name, tech);
+  };
+};
+
+const myNameAndTech = new Developer("Tudor", "nodejs");
+
+myNameAndTech.introduction();
