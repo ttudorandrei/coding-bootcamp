@@ -1,26 +1,50 @@
-const router = require('express').Router();
-const User = require('../../models/User');
+const { Router } = require("express");
 
-// This route uses async/await with '.catch()' for errors
-// and no HTTP status codes
-router.get('/', async (req, res) => {
-  const userData = await User.findAll().catch((err) => {
-    res.json(err);
+const User = require("../../models/User");
+
+const router = Router();
+
+const isValid = ({ body }) => {
+  const validKeys = ["username", "email", "password"];
+
+  return Object.keys(body).every((keyFromReq) => {
+    return validKeys.includes(keyFromReq);
   });
-  res.json(userData);
-});
+};
 
-// This route uses async/await with try/catch for errors
-// along with HTTP status codes
-router.post('/', async (req, res) => {
+const getUsers = async (req, res) => {
   try {
-    const userData = await User.create(req.body);
-    // 200 status code means the request is successful
-    res.status(200).json(userData);
+    const userData = await User.findAll();
+    res.json(userData);
   } catch (err) {
-    // 400 status code means the server could not understand the request
-    res.status(400).json(err);
+    console.log(`[ERROR]: ${err.message}`);
+    res.status(500).json({
+      error: "Failed to get users",
+    });
   }
-});
+};
+
+const createUser = async (req, res) => {
+  try {
+    if (isValid(req)) {
+      const userData = await User.create(req.body);
+      res.status(200).json(userData);
+    } else {
+      console.log(`[INVALID_KEYS]: Invalid request body`);
+      res.status(400).json({
+        error: "Invalid request",
+      });
+    }
+  } catch (err) {
+    console.log(`[ERROR]: ${err.message}`);
+    res.status(500).json({
+      error: "Failed to create user",
+    });
+  }
+};
+
+router.get("/", getUsers);
+
+router.post("/", createUser);
 
 module.exports = router;
