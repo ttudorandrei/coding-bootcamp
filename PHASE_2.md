@@ -1,0 +1,73 @@
+# Phase 2
+
+## Week 9
+
+- How to run a nodeJS file
+- What is an arrow function?
+- What is an anonymous function?
+- What is the difference between an arrow function and a function declaration?
+- Implicit return in arrow functions?
+- What is a function expression?
+- What are methods in an object?
+- What is the `this` keyword in a method?
+- What is an object?
+- How to write an object with multiple key value pairs?
+- How to iterate over the keys in an object?
+- How to iterate over the values in an object?
+- How to iterate over the key value pairs in an object?
+- What are nested objects and how to traverse through them?
+- How to use the dot notation for accessing values in an object?
+- How to use the bracket notation for accessing values in an object?
+- What is a callback function?
+- What is a higher order function?
+- How to remove the last item from an array?
+- How to add an item to the array?
+- How to access an array value using the index?
+- What is the difference between let and const?
+- How to use the `forEach` method on the Array?
+- How to use the `map` method on the Array?
+- How to use the `filter` method on the Array?
+- How to use the `some` method on the Array?
+- How to use the `every` method on the Array?
+- How to use the `find` method on the Array?
+- How to use the `reduce` method on the Array?
+- What are template literals?
+- How to call a function from a template literal?
+- How to pass arguments via CLI in nodeJS?
+- What is `path`?
+- How to use the `join` method in the `path` module?
+- What is `__dirname`?
+- What is `fs`?
+- How to read data from a file?
+- How to write data to a file?
+- How to append data to a file?
+- What is module in nodeJS?
+- How to require a module using the relative path?
+- How to export a default module?
+- How to export multiple functions from a single file?
+- How to import multiple functions from a single file?
+- How to use object destructure?
+- How to use array destructure?
+- How to alias in destructuring?
+- What is npm?
+- How to create a `package.json` file using the CLI?
+- What is the CLI?
+- How to run an npm script?
+- How to add an npm script?
+- How to install a node module?
+- How to install a node module as a dev dependency?
+- What is the difference between a dev dependency and a dependency?
+- How to remove a node module?
+- What is the `node_modules` folder?
+- What is a `.gitignore` file?
+- How to use `async/await`?
+- How to prompt a single or multiple question(s) using `inquirer`?
+- How to convert the inquirer prompt to an `async/await`?
+- How to add a `confirm` question using `inquirer`?
+- How to add a `list` question using `inquirer`?
+- How to prompt a question depending on the confirm choice of another question using `inquirer`?
+- How to validate the data entered for an `inquirer` question?
+- How to iterate over an array using `for of`?
+- How to use the spread operator in arrays?
+- How to use the spread operator in objects?
+- How to use the rest operator in function params?
